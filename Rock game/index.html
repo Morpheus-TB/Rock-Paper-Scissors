@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <!-- Vibrant ambient background elements for glass refraction -->
+  <div class="ambient-blob blob-1"></div>
+  <div class="ambient-blob blob-2"></div>
+
+  <!-- Main Glassmorphic Container -->
+  <main class="glass-card">
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <section class="score-board">
+      <div class="score-box">
+        <span class="score-label">Player</span>
+        <span id="player-score" class="score-value">0</span>
+      </div>
+      <div class="score-divider">:</div>
+      <div class="score-box">
+        <span class="score-label">Computer</span>
+        <span id="computer-score" class="score-value">0</span>
+      </div>
+    </section>
+
+    <section class="result-display">
+      <p id="result-message">Choose your weapon to start!</p>
+    </section>
+
+    <section class="choices">
+      <button class="glass-btn choice-btn" data-choice="rock">
+        <span class="icon">🪨</span>
+        <span class="label">Rock</span>
+      </button>
+      <button class="glass-btn choice-btn" data-choice="paper">
+        <span class="icon">📄</span>
+        <span class="label">Paper</span>
+      </button>
+      <button class="glass-btn choice-btn" data-choice="scissors">
+        <span class="icon">✂️</span>
+        <span class="label">Scissors</span>
+      </button>
+    </section>
+
+    <button id="reset-btn" class="glass-btn reset-btn">Reset Score</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
